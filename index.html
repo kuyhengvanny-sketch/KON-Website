@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KON · កូន — Maternal Health Cambodia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/Media_Photos/Logo_KON.jpg">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════
+       NAVIGATION
+  ════════════════════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="nav-mark">K</div>
+      <span class="nav-name">KON · កូន</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#what">What we do</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#book" class="nav-cta">Book now</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#story" onclick="closeMobileMenu()">Our story</a>
+    <a href="#what" onclick="closeMobileMenu()">What we do</a>
+    <a href="#team" onclick="closeMobileMenu()">Team</a>
+    <a href="#journey" onclick="closeMobileMenu()">Journey</a>
+    <a href="#book" class="mob-cta" onclick="closeMobileMenu()">Book now</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════
+       HERO
+  ════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="badge">
+        <div class="bdot"></div>
+        Now available in Phnom Penh · Cambodia
+      </div>
+      <h1 class="hero-title">
+        For every mother<br>who has a <em>question</em>
+      </h1>
+      <p class="hero-kh">សម្រាប់ម្តាយគ្រប់រូប ដែលមានការសង្ស័យ</p>
+      <p class="hero-tag">
+        KON connects pregnant women with
+        <strong>real, verified doctors and midwives</strong>
+        for online consultations — so you can get answers without going to the hospital.
+      </p>
+      <div class="hero-actions">
+        <a href="#book" class="btn-p">ណាត់ជួបឥឡូវ · Book Now</a>
+        <a href="#story" class="btn-g">Our story</a>
+      </div>
+      <p class="hero-note">30 minutes · $5 - 15$ · Video or voice · 100% verified providers</p>
+    </div>
+
+    <!-- ── HERO IMAGE
+         Replace hero-photo.jpg with your own photo
+         Best: photo of a pregnant woman or a consultation
+    ── -->
+    <div class="hero-right">
+      <div class="hero-img-frame">
+        <img
+          src="images/Mother.jpg"
+          alt="KON maternal health"
+          onerror="this.style.display='none'; document.getElementById('hero-placeholder').style.display='flex'"
+        />
+        <div class="img-placeholder" id="hero-placeholder">
+          <p>Add <strong>images/hero-photo.jpg</strong><br>Photo of mother or consultation</p>
+        </div>
+        <div class="hero-stats-bar">
+          <div class="hsb-stat"><div class="hsb-num">30</div><div class="hsb-label">Min session</div></div>
+          <div class="hsb-stat"><div class="hsb-num">$5 - 15$</div><div class="hsb-label">Per consult</div></div>
+          <div class="hsb-stat"><div class="hsb-num">24h</div><div class="hsb-label">Confirmation</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       OUR STORY
+  ════════════════════════════════ -->
+  <section class="story-section reveal" id="story">
+    <div class="story-text">
+      <span class="label">Why we started KON</span>
+      <h2 class="h2">We were high school friends<br>who asked a <em>simple question</em></h2>
+
+      <p class="body">
+        It started with a question we asked ourselves in high school —
+        <strong>"how can we, as the next generation, actually do something for Cambodia?"</strong>
+        We weren't sure what the answer was. So we started looking.
+      </p>
+      <p class="body">
+        We researched problems online. We talked to people. And we kept coming back to the same issue —
+        maternal health in Cambodia. Pregnant women, especially outside the big cities, often have no one
+        to turn to when they have a question. They don't know what's normal. They don't know when to worry.
+      </p>
+
+      <blockquote class="quote">
+        "We went to Kampong Cham — where I grew up — and did a real survey in the local community.
+        What we found was difficult to see. Mothers had limited access to maternal health knowledge.
+        Simple questions went unanswered."
+        <br><br>— Vanny, Founder
+      </blockquote>
+
+      <p class="body">
+        That's when KON became real for us. Not as a business idea — but as something we genuinely
+        wanted to exist. A place where a pregnant woman anywhere in Cambodia can talk to a real doctor
+        and get a real answer.
+        <strong>No travel. No waiting. No judgment.</strong>
+      </p>
+    </div>
+
+    <!-- ── STORY IMAGES
+         Replace with your real photos
+         story-main.jpg  = team photo or Kampong Cham survey (landscape)
+         story-2.jpg     = any community or research photo (square)
+         story-3.jpg     = team working or meeting photo (square)
+    ── -->
+    <div class="story-images">
+      <div class="story-img-main">
+        <img src="images/1e6b6984-cf33-440b-b8b5-feb90b84de6c.jpg" alt="KON team" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder">
+          <p>Add <strong>images/story-main.jpg</strong><br>Team or Kampong Cham survey photo</p>
+        </div>
+      </div>
+      <div class="story-img-row">
+        <div class="story-img-sm">
+          <img src="images/Survey.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="img-placeholder"><p>story-2.jpg</p></div>
+        </div>
+        <div class="story-img-sm">
+          <img src="images/Survey1.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="img-placeholder"><p>story-3.jpg</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       WHAT KON DOES
+  ════════════════════════════════ -->
+  <section class="what-section reveal" id="what">
+    <div class="what-text">
+      <span class="label">What KON does</span>
+      <h2 class="h2">Clarify your doubts,<br><em>anytime</em></h2>
+      <p class="body">
+        KON is an online consultation platform that connects pregnant women with verified doctors
+        and midwives — so you can get answers to your questions without visiting a hospital.
+      </p>
+      <p class="body">
+        You book a slot. You pay online. You join a video or voice call.
+        Your provider has already read your notes before joining,
+        so every minute is focused on you.
+      </p>
+      <p class="body muted">
+        Every provider on KON is verified through our 3-step process —
+        license check, ID check, and a personal interview.
+        We do not list anyone we have not spoken to ourselves.
+      </p>
+    </div>
+
+    <div class="what-cards">
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <div>
+          <div class="card-title">Ask anything</div>
+          <div class="card-desc">No question is too small. Nutrition, symptoms, birth preparation — your doctor is here to listen.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <div>
+          <div class="card-title">Only verified providers</div>
+          <div class="card-desc">Every doctor and midwife holds a valid Ministry of Health license. Verified by us personally.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <div>
+          <div class="card-title">From your home</div>
+          <div class="card-desc">Video or voice call. No travel, no waiting room. Just you and your doctor.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💜</div>
+        <div>
+          <div class="card-title">$10 per consultation</div>
+          <div class="card-desc">Affordable for every family. Good information should not be a privilege.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       TEAM
+  ════════════════════════════════ -->
+  <section class="team-section reveal" id="team">
+    <span class="label">The team</span>
+    <h2 class="h2">Built by people who <em>care</em></h2>
+
+    <!-- ── TEAM PHOTOS
+         Replace each src with the person's actual photo
+         Best size: square, at least 400x400px
+         File location: images/team-vanny.jpg etc.
+    ── -->
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/Kuyheng.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="team-initial-placeholder"><div class="initial">V</div></div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">VNK Heng (Vanny)</div>
+          <div class="team-role">Founder & CEO</div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/team-molinna.jpg" alt="Molinna" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="team-initial-placeholder"><div class="initial">M</div></div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">El Molinna</div>
+          <div class="team-role">COO</div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/team-layhok.jpg" alt="Layhok" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="team-initial-placeholder"><div class="initial">L</div></div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Leng Layhok</div>
+          <div class="team-role">CTO</div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/YiHanarita_Photo (2).jpg" alt="Hanarita" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="team-initial-placeholder"><div class="initial">H</div></div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Yi Hanarita</div>
+          <div class="team-role">Head of Marketing</div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/SUM Seangleng (2).png" alt="Seangleng" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="team-initial-placeholder"><div class="initial">S</div></div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Sum Seangleng</div>
+          <div class="team-role">Social Media</div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/Panhasith.png" alt="Panhasith" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+          <div class="team-initial-placeholder"><div class="initial">P</div></div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">So Panhasith</div>
+          <div class="team-role">Developer</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       PHOTO GALLERY
+  ════════════════════════════════ -->
+  <section class="gallery-section reveal">
+    <span class="label">KON in action</span>
+    <h2 class="h2">Behind the <em>scenes</em></h2>
+
+    <!-- ── GALLERY PHOTOS
+         Replace each src with your actual photos
+         gallery-1.jpg = large featured photo (team, event, or community)
+         gallery-2 to 5 = smaller supporting photos
+    ── -->
+    <div class="gallery-grid">
+
+      <div class="gallery-item tall">
+        <img src="images/Media_Photos/KE 1.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder"><p>Add <strong>images/gallery-1.jpg</strong><br>Large featured photo</p></div>
+        <div class="gallery-caption">Team working on KON</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/Media_Photos/Turing.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder"><p>gallery-2.jpg</p></div>
+        <div class="gallery-caption">Turing Hackathon Cycle 4</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/ACT.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder"><p>gallery-3.jpg</p></div>
+        <div class="gallery-caption">ACTSmart pitch</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/coffee.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder"><p>gallery-4.jpg</p></div>
+        <div class="gallery-caption">Community research</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/Actsmart.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="img-placeholder"><p>gallery-5.jpg</p></div>
+        <div class="gallery-caption">Building KON</div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       JOURNEY
+  ════════════════════════════════ -->
+  <section class="journey-section reveal" id="journey">
+    <span class="label">KON journey</span>
+    <h2 class="h2">Where we started,<br>where we are <em>going</em></h2>
+    <p class="j-sub">We are a young team building something we believe in. This is our honest timeline.</p>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot done">✓</div>
+        <div class="tl-body">
+          <div class="tl-phase">Where it began</div>
+          <div class="tl-title">A high school question in Kampong Cham</div>
+          <div class="tl-desc">A group of high school friends asked how they could do something real for Cambodia. We surveyed our local community and found the gap in maternal health that no one was filling.</div>
+          <span class="tl-tag tag-done">Completed</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot done">✓</div>
+        <div class="tl-body">
+          <div class="tl-phase">Building the foundation</div>
+          <div class="tl-title">Team, research, and first prototype</div>
+          <div class="tl-desc">We formed our founding team, conducted customer discovery, built our first Figma prototype, and entered ACTSmart Incubator Cohort 2.</div>
+          <span class="tl-tag tag-done">Completed</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot now">→</div>
+        <div class="tl-body">
+          <div class="tl-phase">Right now</div>
+          <div class="tl-title">Manual MVP — proving it works before building it</div>
+          <div class="tl-desc">Google Forms, Sheets, ABA payment, Zoom. Recruiting verified providers. Working toward our first 3 real paid bookings.</div>
+          <span class="tl-tag tag-now">In progress · April 2026</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot next">3</div>
+        <div class="tl-body">
+          <div class="tl-phase">Next</div>
+          <div class="tl-title">First 50 bookings and real provider network</div>
+          <div class="tl-desc">5 verified providers. 50 real consultations. Every booking teaches us something before we scale.</div>
+          <span class="tl-tag tag-next">May — June 2026</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot next">4</div>
+        <div class="tl-body">
+          <div class="tl-phase">Building</div>
+          <div class="tl-title">The real KON platform</div>
+          <div class="tl-desc">Full mobile app — React Native, Supabase, ABA PayWay, in-app video. Built from what we learned in the manual phase.</div>
+          <span class="tl-tag tag-next">Q3 2026</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot next">5</div>
+        <div class="tl-body">
+          <div class="tl-phase">Growing</div>
+          <div class="tl-title">Beyond Phnom Penh</div>
+          <div class="tl-desc">Kampong Cham, Siem Reap, Battambang. Where access to maternal care is even harder. That is where KON was always meant to go.</div>
+          <span class="tl-tag tag-next">2027</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       WHAT'S NEXT
+  ════════════════════════════════ -->
+  <section class="next-section reveal">
+    <span class="label">What's next</span>
+    <h2 class="h2">Three things we are<br>focused on <em>right now</em></h2>
+    <p class="body muted">Not trying to do everything at once. Just three things, done well.</p>
+
+    <div class="next-grid">
+      <div class="next-card">
+        <div class="next-num">01</div>
+        <div class="next-title">Find our first providers</div>
+        <div class="next-kh">រកគ្រូពេទ្យ និងពេទ្យឆ្មប ដំបូង</div>
+        <div class="next-desc">We are personally reaching out to doctors and midwives in Phnom Penh. We verify each one ourselves. Trust is not something we automate.</div>
+        <span class="next-when">Happening now</span>
+      </div>
+      <div class="next-card">
+        <div class="next-num">02</div>
+        <div class="next-title">Get 3 real bookings</div>
+        <div class="next-kh">ការណាត់ជួបពិតៗចំនួន ៣ ដំបូង</div>
+        <div class="next-desc">Not from friends. Not from family. From real patients who find KON and decide to trust us. That number — 3 — is our entire focus this month.</div>
+        <span class="next-when">April — May 2026</span>
+      </div>
+      <div class="next-card">
+        <div class="next-num">03</div>
+        <div class="next-title">Build the app properly</div>
+        <div class="next-kh">បង្កើត App ដែលល្អ</div>
+        <div class="next-desc">Once we know what patients actually need from real bookings, we build the right app — not the app we imagined.</div>
+        <span class="next-when">Q3 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══════════════════════════════
+       BOOK NOW (CTA)
+  ════════════════════════════════ -->
+  <section class="cta-section reveal" id="book">
+    <div class="cta-box">
+      <span class="label">Ready?</span>
+      <h2 class="cta-title">Book your consultation<br><em>today</em></h2>
+      <p class="cta-kh">ពិគ្រោះយោបល់ឥឡូវនេះ</p>
+      <p class="cta-desc">30 minutes with a verified doctor or midwife. Ask anything. Get real answers. From home.</p>
+
+      <div class="cta-actions">
+        <!-- ── REPLACE THIS LINK with your actual Google Form booking link ── -->
+        <a href="https://forms.gle/Q3XxPQJpkje83xTX7" class="btn-p">ណាត់ជួបឥឡូវ · Book Now</a>
+
+        <!-- ── REPLACE THIS LINK with your actual Telegram username ── -->
+        <a href="https://t.me/KONHealth" class="btn-g">Message us on Telegram</a>
+      </div>
+
+      <p class="cta-fine">$10 per session · Video or voice · Confirmed within 24 hours</p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer>
+    <div class="f-left">KON · គូន · konhealth.org · Phnom Penh, Cambodia</div>
+    <div class="f-right">© 2026 KON. Built with care.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
